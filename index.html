@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <!-- from here down a lot of tabs and backspaces are done so the relations between parent elements and child elements are more understandable -->
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- added a title for the page -->
-        <title>Horiseon</title>
-    </head>
-    <body>
-        <div class="header">
-            <h1>Hori<span class="seo">seo</span>n</h1>
-            <div>
-                <ul>
-                    <li>
-                        <a href="#search-engine-optimization">Search Engine Optimization</a>
-                    </li>
-                    <li>
-                        <a href="#online-reputation-management">Online Reputation Management</a>
-                    </li>
-                    <li>
-                        <a href="#social-media-marketing">Social Media Marketing</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- added a title for the page -->
+    <title>Horiseon</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- I am putting all of the page's top items inside a header which is a semantic element -->
+    <!-- also removing extra divs we do not need -->
+    <header class="header">
+      <!-- by adding a tag if you click on the logo it will redirect you to the home page -->
+      <h1>
+        <a href="/">Hori<span class="seo">seo</span>n</a>
+      </h1>
+      <!-- I put all the pag's navigation links inside a nav which is a semantic element -->
+      <!-- also adjusted some CSS codes so it reads the selector correctly -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#search-engine-optimization">Search Engine Optimization</a>
+          </li>
+          <li>
+            <a href="#online-reputation-management">Online Reputation Management</a>
+          </li>
+          <li>
+            <a href="#social-media-marketing">Social Media Marketing</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
         <div class="hero"></div>
         <div class="content">
             <div class="search-engine-optimization">
